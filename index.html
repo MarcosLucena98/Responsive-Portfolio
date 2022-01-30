@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <!--===================== css ==========================-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--===================== heeader ==========================-->
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <!--===================== resume ======================-->
+        <div class="content">
+            <h2>Hello World,<br>I'm <span>Marcos Lucena</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, optio quaerat aspernatur itaque assumenda incidunt corporis ratione debitis architecto vel magnam ullam, quis a perspiciatis sequi! Excepturi id repellat voluptates.</p>
+            <a href="#">Know More</a>
+        </div>
+        <!--================== social medias ==========================-->
+        <ul class="sci">
+            <li><a href="#"><img src="pictures/facebook.png"></a></li>
+            <li><a href="#"><img src="pictures/linkedin.png"></a></li>
+            <li><a href="#"><img src="pictures/twitter.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <!--================== toggle status ==========================-->
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
